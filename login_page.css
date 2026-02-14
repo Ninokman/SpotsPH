@@ -1,0 +1,211 @@
+*{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, 	deepskyblue 50%,  	gainsboro 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+}
+
+.bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+}
+
+.bg3 {
+    animation-duration:5s;
+}
+
+@keyframes slide {
+    0% {
+    transform:translateX(-25%);
+}
+    100% {
+    transform:translateX(25%);
+}
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: 	gainsboro;
+}
+
+hr{
+    width: 300px;
+}
+
+fieldset{
+    border-radius: 15px;
+    width: 300px;
+    height: 400px;
+    padding-bottom: 0px;
+    border-color: lightskyblue;
+    padding-left: 25px;
+    padding-right: 25px;
+    
+}
+.login-container {
+    background-color: 	white;
+    padding: 40px;
+    padding-top: 0px;
+    box-shadow: 5px 3px 5px 0px grey;
+    border-radius: 20px;
+    width: 400px;
+    height: 400px;
+    justify-items: center;
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    transition: all 1s ease-in-out;
+    animation: fadeInScale 0.8s ease-in-out;
+}
+
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+a{
+    font-size: small;
+    color: grey;
+    text-decoration: none;
+}
+
+a:hover{
+    cursor: pointer;
+    text-decoration:underline;
+    color:	deepskyblue;
+}
+
+.login-container:hover{
+    transform: scale(1.09);
+    box-shadow: 0px 0px 5px 3px grey;
+    
+}
+
+.uname, .upassword{
+    text-align: center;
+    justify-items: center;
+}
+
+.loginh h2{
+    color: 	dodgerblue;
+    justify-self: center;
+    text-shadow: 5px 0px 4px  silver;
+}
+
+.uname, .upassword{
+    padding: 20px;
+    border-radius: 20px;
+    justify-content: center;
+    margin: 10px;
+    width: 260px;
+    transition: all 1s ease-in-out;
+    background-color:snow;
+    box-shadow: 5px 0px 10px 3px silver;
+    border: none;
+    text-align: center;
+}
+
+.uname:hover, .upassword:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px 5px silver;
+    border: none;
+}
+
+.uname_label, .password{
+    color: grey;
+    font-size: small;
+}
+
+.button-login{
+    background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+    box-shadow: 0 4px 20px 0 rgba(65, 132, 234, 0.75);
+    width: 100px;
+    font-size: small;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    height: 40px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.button-login:hover {
+    background-position: 100% 0;
+    transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.button-login:focus {
+    outline: none;
+}
+
+.back{
+    background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+    box-shadow: 0 4px 20px 0 rgba(65, 132, 234, 0.75);
+    width: 100px;
+    font-size: small;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    height: 40px;
+    text-align:center;
+    border: none;
+    background-size: 200% 100%;
+
+    border-radius: 50px;
+    transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.back:hover {
+    background-position: 100% 0;
+    transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.back:focus {
+    outline: none;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+hr{
+    width: 300px;
+}
